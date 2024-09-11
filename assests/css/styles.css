@@ -1,7 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     border: 0;
     outline: 0;
+}
+:root {
+  --blue: #3eadf8;
+  ---base-blue:#296ea4;
+  --primary-color:#007bff;
+  --dark:#212529;
+  --white: #ffffff;
+}
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--primary-color);
+    height: 100px;
+    width: 100%;
+}
+.nav-items{
+display: flex;
+flex-direction: row;
+column-gap: 2rem;
+justify-content: center;
+align-items: center;
+}
+
+.btn{
+    width: 200px;
+    padding: 1rem 1.2rem;
+    border-radius: 0.2rem;
 }
