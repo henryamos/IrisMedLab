@@ -6,6 +6,7 @@
     border: 0;
     outline: 0;
     text-decoration: none;
+    list-style-type: none;
 }
 body{
     width: 100wh;
@@ -16,8 +17,11 @@ body{
 :root {
   --blue: #3eadf8;
   ---base-blue:#296ea4;
+  --blue-light:#84dfff;
+
   --primary-color:#007bff;
   --text-color-primary:#002278;
+  --btn-color: linear-gradient(90deg, rgba(132,223,255,1) 30%, rgba(62,173,248,1) 60%, rgba(62,173,248,1) 100%);
   --dark:#212529;
   --white: #fffefe;
   --text-white:rgba(255, 255, 255, 0.8);
@@ -103,4 +107,46 @@ background-size: cover;
     background-color: var(--blue); 
     color: var(--text-white);
     border: none;
+}
+/* About Section */
+.about-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem 10rem;
+    column-gap: 5rem;
+}
+.about-content{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    justify-content: space-between;
+}
+
+.about-content h2{
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+.about-content span{
+    font-size: 1.2rem;
+    font-weight: 300; 
+}
+.about-content p{
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 2rem;
+   
+}
+ul{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+.btn-about{
+    width: 30%;
+    background-image: var(--btn-color);
+    padding: 1.3rem;
+    border-radius: 0.2rem;
 }
