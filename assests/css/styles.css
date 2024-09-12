@@ -169,3 +169,13 @@ ul{
     border-radius: 0.2rem;
     background-color: #e1f6fd;
 }
+.department-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-image: url('../images/department.jpg');
+    height:100% ;
+
+    align-items: center;
+    /* padding: 1rem 10rem; */
+}
