@@ -5,13 +5,22 @@
     box-sizing: border-box;
     border: 0;
     outline: 0;
+    text-decoration: none;
+}
+body{
+    width: 100wh;
+    height: 100vh;
+    font-family: "Work Sans", system-ui;
+    font-optical-sizing: auto;
 }
 :root {
   --blue: #3eadf8;
   ---base-blue:#296ea4;
   --primary-color:#007bff;
+  --text-color-primary:#002278;
   --dark:#212529;
-  --white: #ffffff;
+  --white: #fffefe;
+  --text-white:rgba(255, 255, 255, 0.8);
 }
 .nav{
     display: flex;
@@ -25,13 +34,73 @@
 .nav-items{
 display: flex;
 flex-direction: row;
-column-gap: 2rem;
+column-gap: 2.1rem;
 justify-content: center;
 align-items: center;
 }
+.nav-items a{
+    color: var(--text-white);
+    font-size: 1rem;
+    font-weight: 500;
+}
 
-.btn{
+.nav-btn{
     width: 200px;
-    padding: 1rem 1.2rem;
+    padding: 1.2rem 1.5rem;
     border-radius: 0.2rem;
+    font-size: 1rem;
+    color: var(--text-color-primary);
+    margin-left: 1em;
+}
+.nav-btn:hover{
+    background-color: var(--text-color-primary); 
+    color: var(--text-white);
+    border: none;
+}
+/*  */
+/* Hero Section */
+.hero-section{
+
+background: linear-gradient(90deg, rgba(0,34,120,0.8) 30%, rgba(0,34,120,0.7) 40%, rgba(0,123,255,0.2) 100%), url('../images/banner.png') ;
+height: 100%;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+.hero-content{
+    display: flex;
+    flex-direction: column;
+     row-gap: 0.8rem;
+    justify-content: center;
+    padding-left: 10rem;
+    height: 100%;
+    color: var(--text-white);
+}
+.hero-content h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+.hero-content h3{
+    font-size: 3.6rem;
+    font-weight: 300;
+}
+.hero-content p{
+    font-size: 0.9rem;
+}
+.hero-content .hero-btn{
+    background-color: transparent;
+    border-radius: 0.2rem;
+    border: 1px solid var(--text-white);
+    color: var(--text-white);
+    padding: 0.8rem 0.6rem;
+    display: inline;
+    width: 15%;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: .5rem;
+}
+.hero-btn:hover {
+    background-color: var(--blue); 
+    color: var(--text-white);
+    border: none;
 }
