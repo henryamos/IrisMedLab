@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assests/css/styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/flaticon/flaticon.css"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <title>IrisMedics</title>
   </head>
   <body>
@@ -29,18 +35,17 @@
         <button class="hero-btn">Discover More</button>
       </div>
     </section>
-    <section id="about">
+    <section data-aos="zoom-in-right" id="about">
       <div class="about-container">
-        <div class="img-container">
+        <div data-aos="fade-up" class="img-container">
           <img class="right" src="./assests/images/doc1.jpg" alt="about" />
           <div class="left"></div>
         </div>
         <div class="about-content">
-            <div>
-
-                <h2>Iris Medics</h2>
-                <span>Your Health, Our Commitment.</span>
-            </div>
+          <div>
+            <h2>Iris Medics</h2>
+            <span>Your Health, Our Commitment.</span>
+          </div>
           <p>
             At IrisMedics, we believe that good health is the cornerstone of a
             fulfilling life. Our commitment is to provide comprehensive and
@@ -48,39 +53,49 @@
             community.
           </p>
           <div>
-
-              <ul>
-                  <li>
-                      Diagnostic Services
-                    </li>
-                    <li>Specialty Care</li>
-                    <li>Surgical Services</li>
-                </ul>
-            </div>
-            <button class="btn-about">
-                About Us
-            </button>
+            <ul>
+              <li><i class="fa-solid fa-circle-check"></i>Emergency Care</li>
+              <li>
+                <i class="fa-solid fa-circle-check"></i>Diagnostic Services
+              </li>
+              <li><i class="fa-solid fa-circle-check"></i>Specialty Care</li>
+              <li><i class="fa-solid fa-circle-check"></i>Surgical Services</li>
+            </ul>
+          </div>
+          <button class="btn-about">About Us</button>
         </div>
       </div>
     </section>
-    <section id="department-section">
-        <div class="department-container">
-            <div class="footer-heading">
-                <div>
-                    <h4>Departments</h4>
-                    <p>Cardiac Clinic</p>
-                </div>
-            </div>
-            <div>
-                Icons
-            </div>
-            <div>
-                Icons
-            </div>
-        </div>
 
+    <section class="department-section">
+      <div class="department-container">
+        <div class="department-heading">
+          <h4>Departments</h4>
+          <div class="department-title">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore.
+            </p>
+            <div>
+              <button class="depart-btn">Learn More</button>
+            </div>
+          </div>
+        </div>
+        <div class="department-icons">
+          <!-- Department icons -->
+        </div>
+        <!-- Department Image -->
+        <div>Icons</div>
+      </div>
     </section>
-    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
   </body>
-  
+  <script
+    src="https://kit.fontawesome.com/a39587020f.js"
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+    AOS.init();
+  </script>
 </html>
